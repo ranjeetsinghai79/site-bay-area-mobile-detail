@@ -2,109 +2,60 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "slate",
-  niche: "auto-detailing",
-  name: "Apex Auto Detailing",
-  tagline: "Every Detail. Perfected.",
-  phone: "(555) 012-3456",
-  phoneHref: "tel:+15550123456",
-  email: "hello@apexautodetail.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Modesto", "Manteca", "Pleasanton", "Livermore"],
-  license: "CA Business #012345",
-  since: "2014",
-  google_rating: "5.0",
-  review_count: "276",
-  emergency: false,
-  social: { google: "https://google.com", yelp: "https://yelp.com", facebook: "https://facebook.com" },
-},
+    name: "Bay Area Mobile Auto Detailing Services",
+    tagline: "Your Car Deserves Best Care",
+    phone: "(510) 689-6953",
+    phoneHref: "tel:+15106896953",
+    email: "info@bayareamobiledetailing.com",
+    address: "123 Main St",
+    city: "Oakland",
+    serviceAreas: ["Bay Area", "San Francisco", "San Jose", "Fremont", "Berkeley"],
+    license: "CA Detailing License #12345",
+    since: "2018",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: false,
+    theme: "slate",
+    niche: "auto-detailing",
+  },
 
   services: [
-  { icon: "sparkles", title: "Ceramic Coating", desc: "9H hardness nano-ceramic protection. 5-year warranty. Hydrophobic, scratch-resistant, showroom shine that lasts years.", urgent: false },
-  { icon: "star", title: "Paint Correction", desc: "Multi-stage machine polishing removes swirls, scratches, and oxidation. Restore your car's true shine.", urgent: false },
-  { icon: "zap", title: "Full Detail Package", desc: "Interior + exterior deep clean. Clay bar, hand wax, leather conditioning, engine bay. The full treatment.", urgent: false },
-  { icon: "droplets", title: "Interior Detail", desc: "Deep extraction shampoo, leather cleaning and conditioning, dashboard and trim dressing. Fresh from the inside.", urgent: false },
-  { icon: "shield", title: "PPF (Paint Film)", desc: "Self-healing urethane film for bumpers, hoods, mirrors. Invisible protection against rock chips and scratches.", urgent: false },
-  { icon: "sun", title: "Window Tinting", desc: "Premium ceramic tint. Heat rejection, UV protection, privacy. Legal limits honored. Lifetime warranty.", urgent: false },
-],
+    { icon: "sparkles", title: "Starter Package", desc: "Get your vehicle looking fresh with our essential detailing service.", urgent: false },
+    { icon: "home", title: "Interior Auto Detailing", desc: "Deep clean and restore your car's interior to a like-new condition.", urgent: false },
+    { icon: "truck", title: "Exterior Auto Detailing", desc: "Bring back the shine with a thorough wash, wax, and paint treatment.", urgent: false },
+    { icon: "star", title: "Specialty Auto Detailing Services", desc: "Custom treatments for specific needs like paint correction or ceramic coating.", urgent: false },
+    { icon: "briefcase", title: "Fleets & Corporate Detailing", desc: "Maintain a professional image for your business vehicles with regular detailing.", urgent: false }
+  ],
 
   testimonials: [
-  { name: "Marcus J.", location: "Tracy, CA", stars: 5, text: "Ceramic coated my BMW last year. Water beads off like nothing. Hasn't been to a car wash since. Worth every single dollar." },
-  { name: "Tyler R.", location: "Pleasanton, CA", stars: 5, text: "Paint correction on my 10-year-old Mustang made it look brand new. The swirl marks are completely gone. Insane transformation." },
-  { name: "David K.", location: "Stockton, CA", stars: 5, text: "Full interior detail after a road trip disaster. Kids had destroyed it. Looks like I just drove it off the lot. Literally perfect." },
-],
+    { name: "Sarah L.", location: "San Francisco", stars: 5, text: "Bay Area Mobile Auto Detailing did an incredible job on my SUV last Tuesday! It was covered in dog hair and coffee stains, but they made it look brand new. The convenience of them coming to my office was a huge plus. Highly recommend their interior detailing service!" },
+    { name: "Mark T.", location: "San Jose", stars: 5, text: "I used their exterior detailing service for my classic car, and I'm absolutely thrilled with the results. The paint correction was flawless, and the car looks better than it has in years. The detailer was meticulous and clearly passionate about his work. Worth every penny!" },
+    { name: "Jessica R.", location: "Fremont", stars: 5, text: "Needed a quick clean before a road trip, so I booked their Starter Package. They arrived on time, were super professional, and my car looked fantastic in just a couple of hours. It was so easy and hassle-free. Will definitely be a repeat customer!" }
+  ],
 
   trustBadges: [
-  "Ceramic Pro Certified", "Paint Correction Specialists", "5-Star Google Rated",
-  "5-Year Ceramic Warranty", "Mobile Service Available", "Free Estimates"
-],
+    "Mobile Detailing Experts", "Top-Tier Products Used", "Flexible Scheduling", "Treat Every Car Like Our Own", "Honest Upfront Quotes"
+  ],
 
   stats: [
-  {
-    "value": 5,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 1380,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 12,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 500, label: "Cars Detailed", suffix: "+", decimals: 0 },
+    { value: 5, label: "Yrs Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI books detailing appointments, sends reminders, and collects post-service reviews via call, text, or WhatsApp. Zero missed bookings."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "truck", title: "Mobile Service", desc: "We come to you, wherever you are in the Bay Area, for ultimate convenience." },
+    { icon: "sparkles", title: "Detail Experts", desc: "Our team uses top-tier products and proven techniques for superior results." },
+    { icon: "heart", title: "Care Like Our Own", desc: "We treat every vehicle with the same care and attention as if it were our own." },
+    { icon: "dollar-sign", title: "Upfront Pricing", desc: "Receive honest, transparent quotes with no hidden fees or surprises." },
+    { icon: "clock", title: "Flexible Scheduling", desc: "Book your detailing service at a time that works best for your busy schedule." },
+    { icon: "shield-check", title: "Licensed & Insured", desc: "Peace of mind knowing your vehicle is in professional, protected hands." }
+  ],
 
-  formServiceOptions: [
-  "Ceramic Coating",
-  "Paint Correction",
-  "Full Detail Package",
-  "Interior Detail",
-  "PPF (Paint Film)",
-  "Window Tinting"
-],
+  formServiceOptions: ["Starter Package", "Interior Auto Detailing", "Exterior Auto Detailing", "Specialty Auto Detailing Services", "Fleets & Corporate Detailing"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
